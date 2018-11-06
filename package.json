@@ -1,0 +1,24 @@
+{
+  "name": "rollup-demo",
+  "scripts": {
+    "prestart": "rm build -rf",
+    "start": "yarn run compile",
+    "watch": "yarn run compile -w &",
+    "compile": "rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "rollup": "^0.67.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/runtime": "^7.1.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^3.4.0"
+  }
+}
